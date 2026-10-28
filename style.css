@@ -1,0 +1,153 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7faf7;
+  color: #243328;
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, #116b3b, #20a464);
+  color: white;
+  text-align: center;
+  padding: 38px 16px 45px;
+  border-radius: 0 0 28px 28px;
+}
+
+.logo {
+  width: 65px;
+  height: 65px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 29px;
+  margin-bottom: 6px;
+}
+
+.hero p {
+  margin-bottom: 22px;
+}
+
+.main-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #137744;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+  padding: 28px 16px;
+}
+
+#menu h2,
+.order-info h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #68766c;
+  margin: 5px 0 22px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.menu-card {
+  background: white;
+  border: 1px solid #e0e9e1;
+  border-radius: 14px;
+  padding: 17px 10px;
+  text-align: center;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.food-icon {
+  font-size: 38px;
+  margin-bottom: 5px;
+}
+
+.menu-card h3 {
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.order-btn {
+  display: block;
+  width: 100%;
+  background: #16864c;
+  color: white;
+  border: none;
+  padding: 10px 6px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order-btn:active,
+.main-btn:active {
+  transform: scale(0.98);
+}
+
+.order-info {
+  margin-top: 32px;
+  padding: 24px 15px;
+  text-align: center;
+  background: #e8f5eb;
+  border-radius: 16px;
+}
+
+.order-info p {
+  margin: 10px 0 18px;
+}
+
+.order-info .main-btn {
+  background: #16864c;
+  color: white;
+}
+
+footer {
+  margin-top: 10px;
+  background: #163e29;
+  color: white;
+  text-align: center;
+  padding: 22px 10px;
+  font-size: 14px;
+}
+
+@media (min-width: 600px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
